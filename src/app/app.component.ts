@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'ngElements';
+
+  addGreeter(){
+    const container = document.getElementById("container");
+    container.innerHTML =  "<app-greet></app-greet>";
+  }
 }
